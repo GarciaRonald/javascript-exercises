@@ -1,4 +1,6 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(fah) {
+  let cel = (fah - 32) * (5 / 9);
+  return cel;
 };
 
 const convertToFahrenheit = function() {
