@@ -3,6 +3,10 @@ const sumAll = function(firstNum, lastNum) {
     let bigNum = 0;
     let sumAll = 0
 
+    if (firstNum < 0 || lastNum < 0) {
+        return "ERROR";
+    }
+
     if (firstNum > lastNum) {
         smallNum = lastNum;
         bigNum = firstNum;
@@ -14,7 +18,7 @@ const sumAll = function(firstNum, lastNum) {
     for (let init = smallNum; init <= bigNum; init++) {
         sumAll += init;
     }
-    
+
     return sumAll;
 };
 
