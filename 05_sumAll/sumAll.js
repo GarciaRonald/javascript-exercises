@@ -7,6 +7,10 @@ const sumAll = function(firstNum, lastNum) {
         return "ERROR";
     }
 
+    if (firstNum % Math.floor(firstNum) !== 0 || lastNum % Math.floor(lastNum) !== 0) {
+        return "ERROR";
+    }
+
     if (firstNum > lastNum) {
         smallNum = lastNum;
         bigNum = firstNum;
